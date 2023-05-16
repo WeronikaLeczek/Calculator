@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Główny kontener dla widoku aplikacji -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity"
+    android:background="@color/background">
+
+    <!-- TextView dla waluty źródłowej -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/source_currency"
+        android:textSize="18sp"
+        android:textColor="@color/textColorPrimary" />
+
+    <!-- Spinner (lista rozwijana) dla wyboru waluty źródłowej -->
+
+    <!-- TextView dla waluty docelowej -->
+    <Spinner
+        android:id="@+id/source_currency_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/target_currency"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:textColor="@color/textColorPrimary" />
+
+    <!-- Spinner dla wyboru waluty docelowej -->
+    <Spinner
+        android:id="@+id/target_currency_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" />
+
+    <!-- TextView dla wprowadzenia wartości do przeliczenia -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_value"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:textColor="@color/textColorPrimary" />
+
+    <!-- Pole tekstowe EditText do wprowadzenia wartości -->
+    <EditText
+        android:id="@+id/value_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/enter_value"
+        android:inputType="numberDecimal"
+        android:textSize="16sp"
+        android:textColor="@color/textColorPrimary" />
+
+    <!-- Przycisk do obliczenia przeliczenia walut -->
+    <Button
+        android:id="@+id/calculate_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/calculate"
+        android:textSize="18sp"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
