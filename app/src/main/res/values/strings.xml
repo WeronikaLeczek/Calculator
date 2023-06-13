@@ -4,4 +4,6 @@
     <string name="target_currency">Wybierz walutę docelową</string>
     <string name="enter_value">Wprowadź wartość</string>
     <string name="calculate">Przelicz</string>
+    <string name="converted_value">Przeliczona wartość: </string>
+
 </resources>

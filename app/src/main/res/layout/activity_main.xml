@@ -73,4 +73,24 @@
         android:backgroundTint="@color/colorAccent"
         android:textColor="@android:color/white" />
 
+    <!-- TextView dla wyświetlenia przeliczonej wartości -->
+    <TextView
+        android:id="@+id/converted_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/teal_700"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/converted_value" />
+
+    <Button
+        android:id="@+id/update_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aktualizuj" />
+
+
 </LinearLayout>
